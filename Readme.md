@@ -9,6 +9,9 @@
 <p><a href='http://developers.heyzap.com/' target='_blank'></a></p>
 
 <h1>Documentation</h1>
+<h2>Require plugin</h2>
+require "heyzap"  -- let Gideros know you will be using heyzap plugin, which would automatically create a heyzap variable
+
 <h2>Methods:</h2>
 <ul>
 <li>heyzap:init(useAds, appID) --initialize plugin (bool useAds - will you use ads, string appID - your IOS appID (for crosscompatability can also be passed to Android, won't do any harm))</li>
