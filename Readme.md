@@ -20,3 +20,11 @@
 <li>heyzap:showAchievements() -- show achievements</li>
 <li>heyzap:checkin([message]) -- allow user to checkin in your game with provided optional message</li>
 </ul>
+
+<h2>Events:</h2>
+<ul>
+<li>Event.AD_RECEIVED --ad is displayed</li>
+<li>Event.AD_FAILED --ad could not be displayed</li>
+<li>Event.AD_ACTION_BEGIN --some action on ad begun (user click)</li>
+<li>Event.AD_DISMISSED --ad is dismissed/removed</li>
+</ul>

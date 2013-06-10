@@ -1,4 +1,3 @@
-<h1>Notification installation instructions</h1>
 <h2>Android</h2>
 <h4>1) Gideros project</h4>
 <ul>
