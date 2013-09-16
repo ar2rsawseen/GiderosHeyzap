@@ -4,33 +4,26 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Hashtable;
 
-import android.app.Activity;
-import android.util.SparseArray;
-import android.view.Gravity;
 import com.heyzap.sdk.HeyzapLib;
-import com.heyzap.sdk.ads.BannerOverlay;
 import com.heyzap.sdk.ads.HeyzapAds;
 import com.heyzap.sdk.ads.InterstitialOverlay;
 import com.heyzap.sdk.ads.OnAdDisplayListener;
+
+import android.app.Activity;
+import android.util.Log;
+import android.util.SparseArray;
+import android.view.Gravity;
 
 public class GHeyzap implements OnAdDisplayListener{
 	
 	private static WeakReference<Activity> sActivity;
 	private static long sData = 0;
 	private static GHeyzap sInstance;
-	private static Hashtable<String, Integer> alignVer;
-	private static String curVerAlignment = "top";
 	private static boolean hasInterstitial = false;
-	private static boolean hasBanner = false;
 	
 	public static void onCreate(Activity activity)
 	{
 		sActivity =  new WeakReference<Activity>(activity);
-		
-		alignVer = new Hashtable<String, Integer>();
-		alignVer.put("top", Gravity.TOP);
-		alignVer.put("bottom", Gravity.BOTTOM);
-		alignVer.put("center", Gravity.CENTER_VERTICAL);
 	}
 	
 	//on destroy event
@@ -44,7 +37,6 @@ public class GHeyzap implements OnAdDisplayListener{
 		sData = data;
 		sInstance = new GHeyzap();
 		InterstitialOverlay.setDisplayListener(sInstance);
-		BannerOverlay.setDisplayListener(sInstance);
 	}
 	
 	public static void cleanup()
@@ -75,16 +67,6 @@ public class GHeyzap implements OnAdDisplayListener{
 			InterstitialOverlay.display(sActivity.get());
 			hasInterstitial = true;
 		}
-		else if(type.equals("banner"))
-		{
-			curVerAlignment = param.get(1, "top");
-			if(hasBanner)
-			{
-				BannerOverlay.dismiss();
-			}
-			BannerOverlay.display(sActivity.get(), alignVer.get(curVerAlignment));
-			hasBanner = true;
-		}
 	}
 	
 	//remove ad
@@ -95,11 +77,6 @@ public class GHeyzap implements OnAdDisplayListener{
 			InterstitialOverlay.dismiss();
 			hasInterstitial = false;
 		}
-		if(hasBanner)
-		{
-			BannerOverlay.dismiss();
-			hasBanner = false;
-		}
 	}
 	
 	public static void submitScore(String score, String displayScore, String level){
@@ -107,11 +84,11 @@ public class GHeyzap implements OnAdDisplayListener{
 	}
 	
 	public static void showLeaderboard(){
-			HeyzapLib.showLeaderboards(sActivity.get());
+		HeyzapLib.showLeaderboards(sActivity.get());
 	}
 	
 	public static void showLeaderboard(String levelId){
-			HeyzapLib.showLeaderboards(sActivity.get(), levelId);
+		HeyzapLib.showLeaderboards(sActivity.get(), levelId);
 	}
 	
 	public static void unlockAchievement(String achievement){
@@ -139,36 +116,39 @@ public class GHeyzap implements OnAdDisplayListener{
 	private static native void onAdDismissed(long data);
 
 	@Override
-	public void onShow() {
+	public void onShow(String tag) {
+		Log.d("AdShow", "showing ad");
 		if (sData != 0)
 			onAdReceived(sData);
+		
 	}
 
 	@Override
-	public void onClick() {
+	public void onClick(String tag) {
 		if (sData != 0)
 			onAdActionBegin(sData);
 	}
 
 	@Override
-	public void onHide() {
+	public void onHide(String tag) {
 		if (sData != 0)
 			onAdDismissed(sData);
 	}
 
 	@Override
-	public void onFailedToShow() {
+	public void onFailedToShow(String tag) {
 		if (sData != 0)
 			onAdFailed(sData);
 	}
 
 	@Override
-	public void onAvailable() {
+	public void onAvailable(String tag) {
+		if (sData != 0)
+			onAdFailed(sData);
 	}
 
 	@Override
-	public void onFailedToFetch() {
-		if (sData != 0)
-			onAdFailed(sData);
+	public void onFailedToFetch(String tag) {
+
 	}
 }

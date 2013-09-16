@@ -1,0 +1,108 @@
+<h1>Gideros Heyzap Plugin</h1>
+<h2>Android installation</h2>
+<h4>1) Gideros project</h4>
+<ul>
+<li>Create Gideros project</li>
+<li>Export it as Android project</li>
+<li>Import it in Eclipse</li>
+</ul>
+<h4>2) Add HeyzapSDK</h4>
+<ul>
+<li>Download HeyzapSDK: <a href='http://developers.heyzap.com/' target='_blank'>http://developers.heyzap.com/</a></li>
+<li>Import it as "Existing Android Code Into Workspace"</li>
+<li>Add HeyzapSDK to your project (make sure both projects are in the same folders, as for example in one workspace):
+<ul>
+<li>Right click on your project</li>
+<li>Select Properties</li>
+<li>Choose Android</li>
+<li>In the Library section click Add and select HeyzapSDK</li>
+</ul>
+</li>
+<li>More on Heyzap SDK installation here: <a href='http://developers.heyzap.com/docs/android_sdk_setup_and_requirements' target='_blank'>http://developers.heyzap.com/docs/android_sdk_setup_and_requirements</a></li>
+</ul>
+<h4>3) Copying files</h4>
+<ul>
+<li>Copy libs folder to exported project</li>
+<li>Copy src folder to exported project</li>
+</ul>
+<h4>4) Modify Android manifest</h4>
+<ul>
+<li>Add permissions: &lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/&gt;</li>
+<li>Add receiver to application tag to get credit for installed apps:
+<ul>
+<li><pre>&lt;receiver android:name="com.heyzap.sdk.PackageAddedReceiver"&gt;
+ 			&lt;intent-filter&gt;
+  				&lt;data android:scheme="package"/&gt;
+  				&lt;action android:name="android.intent.action.PACKAGE_ADDED"/&gt;
+ 			&lt;/intent-filter&gt;
+		&lt;/receiver&gt;</pre></li>
+</ul>
+</li>
+</ul>
+<h4>5) Modify Main activity file</h4>
+<ul>
+<li>Load library: System.loadLibrary("heyzap");</li>
+<li>Add external class: "com.giderosmobile.android.plugins.heyzap.GHeyzap"</li>
+</ul>
+
+<h2>IOS Installation</h2>
+<h4>1) Gideros project</h4>
+<ul>
+<li>Create Gideros project</li>
+<li>Export it as IOS project</li>
+<li>Open project in Xcode</li>
+</ul>
+<h4>2) Add HeyzapSDK</h4>
+<ul>
+<li>Download HeyzapSDK: <a href='http://developers.heyzap.com/' target='_blank'>http://developers.heyzap.com/</a></li>
+<li>Drag Heyzap.bundle and Heyzap.framework into your project</li>
+<li>Add AdSupport.framework:
+<ul>
+<li>In the project navigator, select your project</li>
+<li>Select your target</li>
+<li>Select the 'Build Phases' tab</li>
+<li>Open 'Link Binaries With Libraries' expander</li>
+<li>Click the '+' button</li>
+<li>Select AdSupport.framework</li>
+<li>Click Add</li>
+</ul></li>
+<li>More on Heyzap SDK installation here: <a href='http://developers.heyzap.com/docs/ios_sdk_setup_and_requirements' target='_blank'>http://developers.heyzap.com/docs/ios_sdk_setup_and_requirements</a></li>
+</ul>
+<h4>3) Copying files</h4>
+<ul>
+<li>Copy Plugins folder into your Xcode project folder</li>
+<li>Add files to your Xcode project:
+<ul>
+<li>Right click on Plugins folder in your Xcode project</li>
+<li>Select Add file to "Your project name"</li>
+<li>Select heyzap.h, heyzapbinder.cpp and heyzap.mm</li>
+</ul>
+</li>
+</ul>
+
+<h2>More information on Heyzap</h2>
+<p><a href='http://developers.heyzap.com/' target='_blank'></a></p>
+
+<h1>Documentation</h1>
+<h2>Require plugin</h2>
+require "heyzap"  -- let Gideros know you will be using heyzap plugin, which would automatically create a heyzap variable
+
+<h2>Methods:</h2>
+<ul>
+<li>heyzap:init(useAds, appID) --initialize plugin (bool useAds - will you use ads, string appID - your IOS appID (for crosscompatability can also be passed to Android, won't do any harm))</li>
+<li>heyzap:showAd(androidType [, androidBannerAlignment]) --display ad (for Android: type interstitial or banner, and banner alignment: top (default value), center and bottom) (for IOS can be called without any value or passing explanatory string for tracking, as "Game Pause ad")</li>
+<li>heyzap:hideAd() -- dismises advertisement, works only on Android, but can be called also on IOS, just won't do anything</li>
+<li>heyzap:submitScore(score, displayScore, leaderboardId) -- submit score for specified leaderboard</li>
+<li>heyzap:showLeaderboard([leaderboardId]) -- display default leaderboard or if leaderboardId provided, display specified leaderboard</li>
+<li>heyzap:unlockAchievement(achievementId) -- unlock specified achievement</li>
+<li>heyzap:showAchievements() -- show achievements</li>
+<li>heyzap:checkin([message]) -- allow user to checkin in your game with provided optional message</li>
+</ul>
+
+<h2>Events:</h2>
+<ul>
+<li>Event.AD_RECEIVED --ad is displayed</li>
+<li>Event.AD_FAILED --ad could not be displayed</li>
+<li>Event.AD_ACTION_BEGIN --some action on ad begun (user click)</li>
+<li>Event.AD_DISMISSED --ad is dismissed/removed</li>
+</ul>
