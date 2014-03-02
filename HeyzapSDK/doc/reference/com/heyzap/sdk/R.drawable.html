@@ -1,0 +1,4451 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <meta name="description" content="Javadoc API documentation for Doclava." />
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<title>
+
+  R.drawable
+
+
+| Doclava
+
+</title>
+<link href="../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../", "../../../../assets/");
+</script>
+<script src="../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../assets/navtree_data.js" type="text/javascript"></script>
+<script src="../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="v2">
+
+<div id="header">
+    <div id="headerLeft">
+    
+      <span id="masthead-title">Doclava</span>
+    
+    </div>
+    <div id="headerRight">
+      
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="search developer docs" name="q"
+                      value="search developer docs"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../')"
+                      onkeyup="return search_changed(event, false, '../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td>
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+      
+        
+  <div id="api-level-toggle">
+    <input type="checkbox" id="apiLevelCheckbox" onclick="toggleApiLevelSelector(this)" />
+    <label for="apiLevelCheckbox" class="disabled">Filter by API Level: </label>
+    <select id="apiLevelSelector">
+      <!-- option elements added by buildApiLevelSelector() -->
+    </select>
+  </div>
+  <script>
+   var SINCE_DATA = [ 'v1', 'v2' ];
+    
+    var SINCE_LABELS = [ 'v1', 'v2' ];
+    buildApiLevelSelector();
+    addLoadEvent(changeApiLevel);
+  </script>
+
+
+      
+    </div>
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links">
+                <a href="../../../packages.html"  >Package Index</a> | 
+                <a href="../../../classes.html" >Class Index</a>
+              </div>
+              <ul>
+                
+    <li class="api apilevel-v2">
+  <a href="../../../com/heyzap/http/package-summary.html">com.heyzap.http</a></li>
+    <li class="api apilevel-v2">
+  <a href="../../../com/heyzap/internal/package-summary.html">com.heyzap.internal</a></li>
+    <li class="selected api apilevel-v2">
+  <a href="../../../com/heyzap/sdk/package-summary.html">com.heyzap.sdk</a></li>
+    <li class="api apilevel-v2">
+  <a href="../../../com/heyzap/sdk/ads/package-summary.html">com.heyzap.sdk.ads</a></li>
+    <li class="api apilevel-v2">
+  <a href="../../../org/json/heyzap/package-summary.html">org.json.heyzap</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/HeyzapLib.LevelRequestListener.html">HeyzapLib.LevelRequestListener</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardLevelFeedlette.LeaderboardLevelSelectListener.html">LeaderboardLevelFeedlette.LeaderboardLevelSelectListener</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardLevelsDialog.OnHideListener.html">LeaderboardLevelsDialog.OnHideListener</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/Rzap.ResourceGetter.html">Rzap.ResourceGetter</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/AchievementDialogFull.html">AchievementDialogFull</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/AchievementEarnedDialogTop.html">AchievementEarnedDialogTop</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/AchievementFeedlette.html">AchievementFeedlette</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/AchievementsFullOverlay.html">AchievementsFullOverlay</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/BuildConfig.html">BuildConfig</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/HeyzapButton.html">HeyzapButton</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/HeyzapLeaderboardButton.html">HeyzapLeaderboardButton</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/HeyzapLib.html">HeyzapLib</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardDialog.html">LeaderboardDialog</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardFullOverlay.html">LeaderboardFullOverlay</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardInGameOverlay.html">LeaderboardInGameOverlay</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardLevelFeedlette.html">LeaderboardLevelFeedlette</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardLevelsDialog.html">LeaderboardLevelsDialog</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardScoreDialogFull.html">LeaderboardScoreDialogFull</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardScoreDialogTop.html">LeaderboardScoreDialogTop</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardScoreLauncher.html">LeaderboardScoreLauncher</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardUserFeedlette.html">LeaderboardUserFeedlette</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/PreMarketCheckinDialog.html">PreMarketCheckinDialog</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/PreMarketDialog.html">PreMarketDialog</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/PreMarketDialog.ActionOnClickListener.html">PreMarketDialog.ActionOnClickListener</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/PreMarketDialog.DrawableManager.html">PreMarketDialog.DrawableManager</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/PreMarketDialog.SkipOnClickListener.html">PreMarketDialog.SkipOnClickListener</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/R.html">R</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/R.anim.html">R.anim</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/R.attr.html">R.attr</a></li>
+          <li class="selected api apilevel-v2"><a href="../../../com/heyzap/sdk/R.drawable.html">R.drawable</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/R.id.html">R.id</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/R.layout.html">R.layout</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/R.string.html">R.string</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/R.style.html">R.style</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/R.styleable.html">R.styleable</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/Rzap.html">Rzap</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/SplashDialog.html">SplashDialog</a></li>
+      </ul>
+    </li>
+              
+              
+    <li><h2>Enums</h2>
+      <ul>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardUserFeedlette.LeaderboardUserFeedletteType.html">LeaderboardUserFeedlette.LeaderboardUserFeedletteType</a></li>
+      </ul>
+    </li>
+              
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links">
+            <a href="../../../packages.html"  >Package Index</a> | 
+            <a href="../../../classes.html" >Class Index</a>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+  
+   
+  
+  
+  
+  
+
+
+<div class="sum-details-links">
+
+
+Summary:
+
+
+
+
+
+
+
+  <a href="#lfields">Fields</a>
+  
+
+
+
+  &#124; <a href="#pubctors">Ctors</a>
+  
+
+
+
+
+
+  &#124; <a href="#inhmethods">Inherited Methods</a>
+
+&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+    static 
+    final 
+    
+    class
+<h1>R.drawable</h1>
+
+
+
+  
+    extends <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Object.html">Object</a><br/>
+  
+  
+  
+
+  
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-v2">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="2" class="jd-inheritance-class-cell"><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Object.html">java.lang.Object</a></td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.heyzap.sdk.R.drawable</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+
+
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========== FIELD SUMMARY =========== -->
+<table id="lfields" class="jd-sumtable"><tr><th colspan="12">Fields</th></tr>
+
+
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#banner_l_corner_bottom">banner_l_corner_bottom</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#banner_p_corner_bottom">banner_p_corner_bottom</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#bannertop_l_corner">bannertop_l_corner</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#bannertop_p_corner">bannertop_p_corner</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_achievements_bubble">hz_achievements_bubble</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_achievements_dialog">hz_achievements_dialog</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_achievements_dialog_gradient">hz_achievements_dialog_gradient</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_badge_new">hz_badge_new</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_bg_stream_feedlette">hz_bg_stream_feedlette</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_bg_stream_feedlette_hover">hz_bg_stream_feedlette_hover</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_bg_tile_stream">hz_bg_tile_stream</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_bg_tile_stream_hover">hz_bg_tile_stream_hover</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_bubble">hz_bubble</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_button_action_gray">hz_button_action_gray</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_button_action_gray_drawable">hz_button_action_gray_drawable</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_button_action_gray_sel">hz_button_action_gray_sel</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_button_action_green">hz_button_action_green</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_button_action_green_drawable">hz_button_action_green_drawable</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_button_action_green_sel">hz_button_action_green_sel</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_button_fb_down">hz_button_fb_down</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_button_fb_up">hz_button_fb_up</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_button_round_green">hz_button_round_green</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_button_round_green_drawable">hz_button_round_green_drawable</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_button_round_green_sel">hz_button_round_green_sel</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_button_transparent">hz_button_transparent</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_button_transparent_drawable">hz_button_transparent_drawable</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_button_transparent_sel">hz_button_transparent_sel</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_checkin_dialog_bg">hz_checkin_dialog_bg</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_close">hz_close</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_cog_down">hz_cog_down</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_cog_up">hz_cog_up</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_dialog_action_bar">hz_dialog_action_bar</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_dialog_background">hz_dialog_background</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_dialog_banner_default">hz_dialog_banner_default</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_dialog_border">hz_dialog_border</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_dialog_users_ratings">hz_dialog_users_ratings</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_down_arrow">hz_down_arrow</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_fb_login_down">hz_fb_login_down</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_fb_login_up">hz_fb_login_up</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_getheyzap_down">hz_getheyzap_down</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_getheyzap_up">hz_getheyzap_up</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_green_action_button">hz_green_action_button</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_green_action_button_drawable">hz_green_action_button_drawable</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_green_action_button_sel">hz_green_action_button_sel</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_green_button">hz_green_button</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_green_button_new">hz_green_button_new</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_green_button_new_down">hz_green_button_new_down</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_grouped_stream_bg">hz_grouped_stream_bg</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_heyzap_button">hz_heyzap_button</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_heyzap_circle">hz_heyzap_circle</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_ic_divider">hz_ic_divider</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_icon_check">hz_icon_check</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_icon_default_badge">hz_icon_default_badge</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_icon_default_people">hz_icon_default_people</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_install_button">hz_install_button</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_install_heyzap_button">hz_install_heyzap_button</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_install_heyzap_button_drawable">hz_install_heyzap_button_drawable</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_install_heyzap_button_sel">hz_install_heyzap_button_sel</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_invite_grn_btn">hz_invite_grn_btn</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_leaderboard_bottom_btn_drawable">hz_leaderboard_bottom_btn_drawable</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_leaderboard_bottom_btn_sel">hz_leaderboard_bottom_btn_sel</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_leaderboard_bubble_friends">hz_leaderboard_bubble_friends</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_leaderboard_bubble_pedestal">hz_leaderboard_bubble_pedestal</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_leaderboard_bubble_pedestal_arrow">hz_leaderboard_bubble_pedestal_arrow</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_leaderboard_dialog_x">hz_leaderboard_dialog_x</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_leaderboard_glow_bottom">hz_leaderboard_glow_bottom</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_leaderboard_glow_top">hz_leaderboard_glow_top</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_leaderboard_heyzap_logo">hz_leaderboard_heyzap_logo</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_leaderboard_highlight">hz_leaderboard_highlight</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_leaderboard_in_game_dialog">hz_leaderboard_in_game_dialog</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_leaderboard_people">hz_leaderboard_people</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_leaderboard_popover">hz_leaderboard_popover</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_leaderboard_savebg">hz_leaderboard_savebg</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_leaderboard_top_logo">hz_leaderboard_top_logo</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_leaderboard_top_overlay">hz_leaderboard_top_overlay</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_play_friends_action_button_drawable">hz_play_friends_action_button_drawable</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_play_friends_button">hz_play_friends_button</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_play_friends_button_sel">hz_play_friends_button_sel</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_sdk_checkin">hz_sdk_checkin</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_sdk_leaderboard">hz_sdk_leaderboard</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_sdk_z">hz_sdk_z</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_toggle_bg">hz_toggle_bg</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_toggle_slider_down">hz_toggle_slider_down</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_toggle_slider_up">hz_toggle_slider_up</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_top_left_button_drawable">hz_top_left_button_drawable</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.drawable.html#hz_top_left_pressed_state">hz_top_left_pressed_state</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+
+</table>
+
+
+
+
+
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-v2" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../com/heyzap/sdk/R.drawable.html#R.drawable()">R.drawable</a></span>()
+        
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="inhmethods" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Object-trigger"
+          src="../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Object.html">java.lang.Object</a>
+
+<div id="inherited-methods-java.lang.Object">
+  <div id="inherited-methods-java.lang.Object-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">equals</span>(<a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Object.html">Object</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Class.html">Class</a>&lt;?&gt;
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getClass</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">hashCode</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">notify</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">notifyAll</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/String.html">String</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">toString</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">wait</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">wait</span>(long arg0, int arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">wait</span>(long arg0)
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+</table>
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- Fields -->
+
+
+<!-- ========= FIELD DETAIL ======== -->
+<h2>Fields</h2>
+
+
+
+
+<a id="banner_l_corner_bottom"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        banner_l_corner_bottom
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="banner_p_corner_bottom"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        banner_p_corner_bottom
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="bannertop_l_corner"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        bannertop_l_corner
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="bannertop_p_corner"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        bannertop_p_corner
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_achievements_bubble"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_achievements_bubble
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_achievements_dialog"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_achievements_dialog
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_achievements_dialog_gradient"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_achievements_dialog_gradient
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_badge_new"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_badge_new
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_bg_stream_feedlette"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_bg_stream_feedlette
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_bg_stream_feedlette_hover"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_bg_stream_feedlette_hover
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_bg_tile_stream"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_bg_tile_stream
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_bg_tile_stream_hover"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_bg_tile_stream_hover
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_bubble"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_bubble
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_button_action_gray"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_button_action_gray
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_button_action_gray_drawable"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_button_action_gray_drawable
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_button_action_gray_sel"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_button_action_gray_sel
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_button_action_green"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_button_action_green
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_button_action_green_drawable"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_button_action_green_drawable
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_button_action_green_sel"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_button_action_green_sel
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_button_fb_down"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_button_fb_down
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_button_fb_up"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_button_fb_up
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_button_round_green"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_button_round_green
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_button_round_green_drawable"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_button_round_green_drawable
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_button_round_green_sel"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_button_round_green_sel
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_button_transparent"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_button_transparent
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_button_transparent_drawable"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_button_transparent_drawable
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_button_transparent_sel"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_button_transparent_sel
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_checkin_dialog_bg"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_checkin_dialog_bg
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_close"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_close
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_cog_down"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_cog_down
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_cog_up"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_cog_up
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_dialog_action_bar"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_dialog_action_bar
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_dialog_background"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_dialog_background
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_dialog_banner_default"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_dialog_banner_default
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_dialog_border"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_dialog_border
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_dialog_users_ratings"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_dialog_users_ratings
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_down_arrow"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_down_arrow
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_fb_login_down"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_fb_login_down
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_fb_login_up"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_fb_login_up
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_getheyzap_down"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_getheyzap_down
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_getheyzap_up"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_getheyzap_up
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_green_action_button"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_green_action_button
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_green_action_button_drawable"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_green_action_button_drawable
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_green_action_button_sel"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_green_action_button_sel
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_green_button"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_green_button
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_green_button_new"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_green_button_new
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_green_button_new_down"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_green_button_new_down
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_grouped_stream_bg"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_grouped_stream_bg
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_heyzap_button"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_heyzap_button
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_heyzap_circle"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_heyzap_circle
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_ic_divider"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_ic_divider
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_icon_check"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_icon_check
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_icon_default_badge"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_icon_default_badge
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_icon_default_people"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_icon_default_people
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_install_button"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_install_button
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_install_heyzap_button"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_install_heyzap_button
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_install_heyzap_button_drawable"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_install_heyzap_button_drawable
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_install_heyzap_button_sel"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_install_heyzap_button_sel
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_invite_grn_btn"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_invite_grn_btn
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_leaderboard_bottom_btn_drawable"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_leaderboard_bottom_btn_drawable
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_leaderboard_bottom_btn_sel"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_leaderboard_bottom_btn_sel
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_leaderboard_bubble_friends"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_leaderboard_bubble_friends
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_leaderboard_bubble_pedestal"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_leaderboard_bubble_pedestal
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_leaderboard_bubble_pedestal_arrow"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_leaderboard_bubble_pedestal_arrow
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_leaderboard_dialog_x"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_leaderboard_dialog_x
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_leaderboard_glow_bottom"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_leaderboard_glow_bottom
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_leaderboard_glow_top"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_leaderboard_glow_top
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_leaderboard_heyzap_logo"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_leaderboard_heyzap_logo
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_leaderboard_highlight"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_leaderboard_highlight
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_leaderboard_in_game_dialog"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_leaderboard_in_game_dialog
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_leaderboard_people"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_leaderboard_people
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_leaderboard_popover"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_leaderboard_popover
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_leaderboard_savebg"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_leaderboard_savebg
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_leaderboard_top_logo"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_leaderboard_top_logo
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_leaderboard_top_overlay"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_leaderboard_top_overlay
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_play_friends_action_button_drawable"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_play_friends_action_button_drawable
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_play_friends_button"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_play_friends_button
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_play_friends_button_sel"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_play_friends_button_sel
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_sdk_checkin"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_sdk_checkin
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_sdk_leaderboard"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_sdk_leaderboard
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_sdk_z"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_sdk_z
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_toggle_bg"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_toggle_bg
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_toggle_slider_down"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_toggle_slider_down
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_toggle_slider_up"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_toggle_slider_up
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_top_left_button_drawable"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_top_left_button_drawable
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="hz_top_left_pressed_state"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        hz_top_left_pressed_state
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+
+<!-- Public ctors -->
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<h2>Public Constructors</h2>
+
+
+
+<a id="R.drawable()"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">R.drawable</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<a id="navbar_top"></a>
+
+<div id="footer">
+Generated by <a href="http://code.google.com/p/doclava/">Doclava</a>.
+</div> <!-- end footer -->
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize doclava-developer-docs.js */
+</script>
+
+</body>
+</html>

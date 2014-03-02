@@ -1,0 +1,4397 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <meta name="description" content="Javadoc API documentation for Doclava." />
+
+<link rel="shortcut icon" type="image/x-icon" href="../../../favicon.ico" />
+<title>
+
+  R.style
+
+
+| Doclava
+
+</title>
+<link href="../../../../assets/doclava-developer-docs.css" rel="stylesheet" type="text/css" />
+<link href="../../../../assets/customizations.css" rel="stylesheet" type="text/css" />
+<script src="../../../../assets/search_autocomplete.js" type="text/javascript"></script>
+<script src="../../../../assets/jquery-resizable.min.js" type="text/javascript"></script>
+<script src="../../../../assets/doclava-developer-docs.js" type="text/javascript"></script>
+<script src="../../../../assets/prettify.js" type="text/javascript"></script>
+<script type="text/javascript">
+  setToRoot("../../../", "../../../../assets/");
+</script>
+<script src="../../../../assets/doclava-developer-reference.js" type="text/javascript"></script>
+<script src="../../../../assets/navtree_data.js" type="text/javascript"></script>
+<script src="../../../../assets/customizations.js" type="text/javascript"></script>
+<noscript>
+  <style type="text/css">
+    html,body{overflow:auto;}
+    #body-content{position:relative; top:0;}
+    #doc-content{overflow:visible;border-left:3px solid #666;}
+    #side-nav{padding:0;}
+    #side-nav .toggle-list ul {display:block;}
+    #resize-packages-nav{border-bottom:3px solid #666;}
+  </style>
+</noscript>
+</head>
+
+<body class="v2">
+
+<div id="header">
+    <div id="headerLeft">
+    
+      <span id="masthead-title">Doclava</span>
+    
+    </div>
+    <div id="headerRight">
+      
+  <div id="search" >
+      <div id="searchForm">
+          <form accept-charset="utf-8" class="gsc-search-box" 
+                onsubmit="return submit_search()">
+            <table class="gsc-search-box" cellpadding="0" cellspacing="0"><tbody>
+                <tr>
+                  <td class="gsc-input">
+                    <input id="search_autocomplete" class="gsc-input" type="text" size="33" autocomplete="off"
+                      title="search developer docs" name="q"
+                      value="search developer docs"
+                      onFocus="search_focus_changed(this, true)"
+                      onBlur="search_focus_changed(this, false)"
+                      onkeydown="return search_changed(event, true, '../../../')"
+                      onkeyup="return search_changed(event, false, '../../../')" />
+                  <div id="search_filtered_div" class="no-display">
+                      <table id="search_filtered" cellspacing=0>
+                      </table>
+                  </div>
+                  </td>
+                  <td class="gsc-search-button">
+                    <input type="submit" value="Search" title="search" id="search-button" class="gsc-search-button" />
+                  </td>
+                  <td class="gsc-clear-button">
+                    <div title="clear results" class="gsc-clear-button">&nbsp;</div>
+                  </td>
+                </tr></tbody>
+              </table>
+          </form>
+      </div><!-- searchForm -->
+  </div><!-- search -->
+      
+        
+  <div id="api-level-toggle">
+    <input type="checkbox" id="apiLevelCheckbox" onclick="toggleApiLevelSelector(this)" />
+    <label for="apiLevelCheckbox" class="disabled">Filter by API Level: </label>
+    <select id="apiLevelSelector">
+      <!-- option elements added by buildApiLevelSelector() -->
+    </select>
+  </div>
+  <script>
+   var SINCE_DATA = [ 'v1', 'v2' ];
+    
+    var SINCE_LABELS = [ 'v1', 'v2' ];
+    buildApiLevelSelector();
+    addLoadEvent(changeApiLevel);
+  </script>
+
+
+      
+    </div>
+</div><!-- header -->
+
+
+  <div class="g-section g-tpl-240" id="body-content">
+    <div class="g-unit g-first side-nav-resizable" id="side-nav">
+      <div id="swapper">
+        <div id="nav-panels">
+          <div id="resize-packages-nav">
+            <div id="packages-nav">
+              <div id="index-links">
+                <a href="../../../packages.html"  >Package Index</a> | 
+                <a href="../../../classes.html" >Class Index</a>
+              </div>
+              <ul>
+                
+    <li class="api apilevel-v2">
+  <a href="../../../com/heyzap/http/package-summary.html">com.heyzap.http</a></li>
+    <li class="api apilevel-v2">
+  <a href="../../../com/heyzap/internal/package-summary.html">com.heyzap.internal</a></li>
+    <li class="selected api apilevel-v2">
+  <a href="../../../com/heyzap/sdk/package-summary.html">com.heyzap.sdk</a></li>
+    <li class="api apilevel-v2">
+  <a href="../../../com/heyzap/sdk/ads/package-summary.html">com.heyzap.sdk.ads</a></li>
+    <li class="api apilevel-v2">
+  <a href="../../../org/json/heyzap/package-summary.html">org.json.heyzap</a></li>
+              </ul><br/>
+            </div> <!-- end packages -->
+          </div> <!-- end resize-packages -->
+          <div id="classes-nav">
+            <ul>
+              
+    <li><h2>Interfaces</h2>
+      <ul>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/HeyzapLib.LevelRequestListener.html">HeyzapLib.LevelRequestListener</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardLevelFeedlette.LeaderboardLevelSelectListener.html">LeaderboardLevelFeedlette.LeaderboardLevelSelectListener</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardLevelsDialog.OnHideListener.html">LeaderboardLevelsDialog.OnHideListener</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/Rzap.ResourceGetter.html">Rzap.ResourceGetter</a></li>
+      </ul>
+    </li>
+              
+    <li><h2>Classes</h2>
+      <ul>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/AchievementDialogFull.html">AchievementDialogFull</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/AchievementEarnedDialogTop.html">AchievementEarnedDialogTop</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/AchievementFeedlette.html">AchievementFeedlette</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/AchievementsFullOverlay.html">AchievementsFullOverlay</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/BuildConfig.html">BuildConfig</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/HeyzapButton.html">HeyzapButton</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/HeyzapLeaderboardButton.html">HeyzapLeaderboardButton</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/HeyzapLib.html">HeyzapLib</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardDialog.html">LeaderboardDialog</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardFullOverlay.html">LeaderboardFullOverlay</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardInGameOverlay.html">LeaderboardInGameOverlay</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardLevelFeedlette.html">LeaderboardLevelFeedlette</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardLevelsDialog.html">LeaderboardLevelsDialog</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardScoreDialogFull.html">LeaderboardScoreDialogFull</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardScoreDialogTop.html">LeaderboardScoreDialogTop</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardScoreLauncher.html">LeaderboardScoreLauncher</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardUserFeedlette.html">LeaderboardUserFeedlette</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/PreMarketCheckinDialog.html">PreMarketCheckinDialog</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/PreMarketDialog.html">PreMarketDialog</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/PreMarketDialog.ActionOnClickListener.html">PreMarketDialog.ActionOnClickListener</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/PreMarketDialog.DrawableManager.html">PreMarketDialog.DrawableManager</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/PreMarketDialog.SkipOnClickListener.html">PreMarketDialog.SkipOnClickListener</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/R.html">R</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/R.anim.html">R.anim</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/R.attr.html">R.attr</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/R.drawable.html">R.drawable</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/R.id.html">R.id</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/R.layout.html">R.layout</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/R.string.html">R.string</a></li>
+          <li class="selected api apilevel-v2"><a href="../../../com/heyzap/sdk/R.style.html">R.style</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/R.styleable.html">R.styleable</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/Rzap.html">Rzap</a></li>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/SplashDialog.html">SplashDialog</a></li>
+      </ul>
+    </li>
+              
+              
+    <li><h2>Enums</h2>
+      <ul>
+          <li class="api apilevel-v2"><a href="../../../com/heyzap/sdk/LeaderboardUserFeedlette.LeaderboardUserFeedletteType.html">LeaderboardUserFeedlette.LeaderboardUserFeedletteType</a></li>
+      </ul>
+    </li>
+              
+              
+            </ul><br/>
+          </div><!-- end classes -->
+        </div><!-- end nav-panels -->
+        <div id="nav-tree" style="display:none">
+          <div id="index-links">
+            <a href="../../../packages.html"  >Package Index</a> | 
+            <a href="../../../classes.html" >Class Index</a>
+          </div>
+        </div><!-- end nav-tree -->
+      </div><!-- end swapper -->
+    </div> <!-- end side-nav -->
+    <script>
+      if (!isMobile) {
+        $("<a href='#' id='nav-swap' onclick='swapNav();return false;' style='font-size:10px;line-height:9px;margin-left:1em;text-decoration:none;'><span id='tree-link'>Use Tree Navigation</span><span id='panel-link' style='display:none'>Use Panel Navigation</span></a>").appendTo("#side-nav");
+        chooseDefaultNav();
+        if ($("#nav-tree").is(':visible')) {
+          init_default_navtree("../../../");
+        } else {
+          addLoadEvent(function() {
+            scrollIntoView("packages-nav");
+            scrollIntoView("classes-nav");
+          });
+        }
+        $("#swapper").css({borderBottom:"2px solid #aaa"});
+      } else {
+        swapNav(); // tree view should be used on mobile
+      }
+    </script>
+
+
+
+<div class="g-unit" id="doc-content">
+
+<div id="api-info-block">
+
+
+
+  
+   
+  
+  
+  
+  
+
+
+<div class="sum-details-links">
+
+
+Summary:
+
+
+
+
+
+
+
+  <a href="#lfields">Fields</a>
+  
+
+
+
+  &#124; <a href="#pubctors">Ctors</a>
+  
+
+
+
+
+
+  &#124; <a href="#inhmethods">Inherited Methods</a>
+
+&#124; <a href="#" onclick="return toggleAllClassInherited()" id="toggleAllClassInherited">[Expand All]</a>
+
+</div><!-- end sum-details-links -->
+<div class="api-level">
+  
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+  
+  
+
+</div>
+</div><!-- end api-info-block -->
+
+
+<!-- ======== START OF CLASS DATA ======== -->
+
+<div id="jd-header">
+    public
+    static 
+    final 
+    
+    class
+<h1>R.style</h1>
+
+
+
+  
+    extends <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Object.html">Object</a><br/>
+  
+  
+  
+
+  
+  
+  
+
+
+</div><!-- end header -->
+
+<div id="naMessage"></div>
+
+<div id="jd-content" class="api apilevel-v2">
+<table class="jd-inheritance-table">
+
+
+    <tr>
+         	
+        <td colspan="2" class="jd-inheritance-class-cell"><a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Object.html">java.lang.Object</a></td>
+    </tr>
+    
+
+    <tr>
+        
+            <td class="jd-inheritance-space">&nbsp;&nbsp;&nbsp;&#x21b3;</td>
+         	
+        <td colspan="1" class="jd-inheritance-class-cell">com.heyzap.sdk.R.style</td>
+    </tr>
+    
+
+</table>
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+
+
+
+
+</div><!-- jd-descr -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="jd-descr">
+
+
+<h2>Summary</h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- =========== FIELD SUMMARY =========== -->
+<table id="lfields" class="jd-sumtable"><tr><th colspan="12">Fields</th></tr>
+
+
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzAchievementFeedLabel">HzAchievementFeedLabel</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzAchievementFeedRow">HzAchievementFeedRow</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzAchievementFeedSublabel">HzAchievementFeedSublabel</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzActionGrayButton">HzActionGrayButton</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzActionGreenButton">HzActionGreenButton</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzAuthCallToAction">HzAuthCallToAction</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzAuthHeader">HzAuthHeader</a></td>
+          <td class="jd-descrcol" width="100%">Auth splash/login/signup styles 
+</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzAuthSellLight">HzAuthSellLight</a></td>
+          <td class="jd-descrcol" width="100%"><style name="HzAuthReasonShiney" parent="@style/HzBlock"> 
+ <item name="android:padding">8dp</item> 
+ <item name="android:layout_marginBottom">10dp</item> 
+ <item name="android:background">@drawable/splash_bg_shiney</item> 
+ <item name="android:textColor">#FF000000</item> 
+ <item name="android:textSize">14sp</item> 
+ </style> 
+ <style name="HzAuthCallToActionLight" parent="@style/HzAuthCallToAction"> 
+ <item name="android:gravity">left</item> 
+ <item name="android:textColor">#FF4C566C</item> 
+ <item name="android:layout_marginBottom">3dp</item> 
+ <item name="android:layout_marginTop">5dp</item> 
+ <item name="android:textSize">14sp</item> 
+ </style> 
+</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzBigFeedHeadline">HzBigFeedHeadline</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzBlock">HzBlock</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzButtonRoundGreen">HzButtonRoundGreen</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzCheckinBannerText">HzCheckinBannerText</a></td>
+          <td class="jd-descrcol" width="100%">In-game popup styles 
+</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzCheckinSettingsIcon">HzCheckinSettingsIcon</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzCheckinSettingsLabel">HzCheckinSettingsLabel</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzCheckinSettingsLine">HzCheckinSettingsLine</a></td>
+          <td class="jd-descrcol" width="100%"><style name="HzCheckinSettingsCheckbox" parent="@style/HzInline"> 
+ <item name="android:button">@android:color/transparent</item> 
+ <item name="android:background">@drawable/checkbox</item> 
+ <item name="android:layout_centerVertical">true</item> 
+ <item name="android:layout_alignParentRight">true</item> 
+ </style> 
+</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzCheckinSettingsSection">HzCheckinSettingsSection</a></td>
+          <td class="jd-descrcol" width="100%">Checkin form settings 
+</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzCheckinShareHeader">HzCheckinShareHeader</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzCheckinShareShareIcon">HzCheckinShareShareIcon</a></td>
+          <td class="jd-descrcol" width="100%"><style name="HzCheckinShareCheckinMessage" parent="@style/HzBlock"> 
+ <item name="android:background">@drawable/ac_edit_text</item> 
+ <item name="android:textColor">#737a80</item> 
+ <item name="android:textSize">14sp</item> 
+ <item name="android:layout_marginTop">8dp</item> 
+ <item name="android:layout_height">32dp</item> 
+ <item name="android:layout_marginBottom">7dp</item> 
+ <item name="android:layout_marginRight">6dp</item> 
+ </style> 
+</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzCheckinShareZappy">HzCheckinShareZappy</a></td>
+          <td class="jd-descrcol" width="100%">Checkin share dialog 
+ <style name="HzCheckinShareBar" parent="@style/HzBlock"> 
+ <item name="android:layout_height">48dp</item> 
+ <item name="android:background">@drawable/ac_bkg_collapsed</item> 
+ </style> 
+</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzDarkTopShadow">HzDarkTopShadow</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzDetailsHeader">HzDetailsHeader</a></td>
+          <td class="jd-descrcol" width="100%">Details page styles 
+</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzDialogSeparator">HzDialogSeparator</a></td>
+          <td class="jd-descrcol" width="100%">Dialog styles 
+</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzDividerText">HzDividerText</a></td>
+          <td class="jd-descrcol" width="100%"><style name="HzFollowComplete" parent="@style/HzInline"> 
+ <item name="android:src">@drawable/user_details_checkin</item> 
+ </style> 
+ <style name="HzDividerRow" parent="@style/HzBlock"> 
+ <item name="android:background">@drawable/bkg_feedlette_divider</item> 
+ <item name="android:paddingLeft">8dp</item> 
+ <item name="android:gravity">center_vertical</item> 
+ </style> 
+</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzErrorDividerText">HzErrorDividerText</a></td>
+          <td class="jd-descrcol" width="100%"><style name="HzErrorDividerRow" parent="@style/HzBlock"> 
+ <item name="android:background">@drawable/bkg_feedlette_divider_error</item> 
+ <item name="android:paddingLeft">8dp</item> 
+ <item name="android:gravity">center_vertical</item> 
+ </style> 
+</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzFeed">HzFeed</a></td>
+          <td class="jd-descrcol" width="100%">Web Feed styles 
+</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzFeedActionTitle">HzFeedActionTitle</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzFeedCheckinCount">HzFeedCheckinCount</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzFeedCommentCount">HzFeedCommentCount</a></td>
+          <td class="jd-descrcol" width="100%"><style name="HzFeedCommentIcon" parent="@style/HzInline"> 
+ <item name="android:layout_marginLeft">18dp</item> 
+ <item name="android:layout_marginRight">4dp</item> 
+ <item name="android:src">@drawable/comment_icon</item> 
+ </style> 
+ <style name="HzFeedLikeIcon" parent="@style/HzInline"> 
+ <item name="android:layout_marginLeft">9dp</item> 
+ <item name="android:layout_marginRight">4dp</item> 
+ <item name="android:src">@drawable/img_like</item> 
+ <item name="android:scaleType">fitXY</item> 
+ <item name="android:layout_width">15dp</item> 
+ <item name="android:layout_height">15dp</item> 
+ </style> 
+</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzFeedDetails">HzFeedDetails</a></td>
+          <td class="jd-descrcol" width="100%"><style name="HzActivityStreamItem" parent="@style/HzBlock"> 
+ <item name="android:paddingLeft">8dp</item> 
+ <item name="android:paddingTop">8dp</item> 
+ <item name="android:paddingRight">30dp</item> 
+ <item name="android:paddingBottom">8dp</item> 
+ <item name="android:background">@drawable/activity_stream_item</item> 
+ </style> 
+ <style name="HzActivityStreamItemFrame" parent="@style/HzVerticalBlock"> 
+ <item name="android:background">@drawable/activity_stream_item</item> 
+ </style> 
+ <style name="HzCommentStreamItem" parent="@style/HzBlock"> 
+ <item name="android:padding">8dp</item> 
+ <item name="android:background">@drawable/comment_stream_item</item> 
+ </style> 
+</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzFeedHeadline">HzFeedHeadline</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzFeedLabel">HzFeedLabel</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzFeedMessage">HzFeedMessage</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzFeedSublabel">HzFeedSublabel</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzFeedTextView">HzFeedTextView</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzFeedUser">HzFeedUser</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzFeedWhen">HzFeedWhen</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzFollowLoading">HzFollowLoading</a></td>
+          <td class="jd-descrcol" width="100%"><style name="HzUserToggle"> 
+ <item name="android:layout_width">wrap_content</item> 
+ <item name="android:layout_height">wrap_content</item> 
+ <item name="android:layout_centerVertical">true</item> 
+ <item name="android:textOff"></item> 
+ <item name="android:textOn"></item> 
+ <item name="android:background">@drawable/user_toggle_button</item> 
+ </style> 
+</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzFormMessage">HzFormMessage</a></td>
+          <td class="jd-descrcol" width="100%">Checkin/Tips form styles 
+</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzFriendsFoundTitle">HzFriendsFoundTitle</a></td>
+          <td class="jd-descrcol" width="100%">Friends found screen styles 
+</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzFull">HzFull</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzGreenActionButton">HzGreenActionButton</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzGreenButton">HzGreenButton</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzHorizontalBlock">HzHorizontalBlock</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzInline">HzInline</a></td>
+          <td class="jd-descrcol" width="100%">Common styles 
+</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzLargeGreenButton">HzLargeGreenButton</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzLargeIcon">HzLargeIcon</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzLargeUserImage">HzLargeUserImage</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzLoadMoreButton">HzLoadMoreButton</a></td>
+          <td class="jd-descrcol" width="100%">Load more button for lists 
+</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzLoadMoreButtonLabel">HzLoadMoreButtonLabel</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzLoadMoreButtonSpinner">HzLoadMoreButtonSpinner</a></td>
+          <td class="jd-descrcol" width="100%">New common button styles 
+ <style name="HzFacebookLoginButton" parent="@style/HzBlock"> 
+ <item name="android:background">@drawable/btn_facebook_login_drawable</item> 
+ <item name="android:layout_height">47dp</item> 
+ <item name="android:text">Log in with Facebook"</item> 
+ <item name="android:textSize">18dp</item> 
+ <item name="android:textColor">#ffffff</item> 
+ <item name="android:textStyle">bold</item> 
+ <item name="android:shadowColor">#000000</item> 
+ <item name="android:shadowDy">-1</item> 
+ <item name="android:shadowRadius">0.01</item> 
+ <item name="android:gravity">left|center_vertical</item> 
+ </style> 
+ <style name="HzGreenDlgButton" parent="@style/HzLoginButton"> 
+ <item name="android:background">@drawable/dialog_button_primary</item> 
+ <item name="android:paddingLeft">10dp</item> 
+ <item name="android:paddingRight">10dp</item> 
+ <item name="android:textColor">#FFF</item> 
+ <item name="android:textSize">15sp</item> 
+ <item name="android:gravity">center</item> 
+ </style> 
+ <style name="HzDarkDlgButton" parent="@style/HzGreenDlgButton"> 
+ <item name="android:background">@drawable/btn_black_drawable</item> 
+ <item name="android:textStyle">normal</item> 
+ </style> 
+ <style name="HzEditCheckinSettingsButton" parent="@style/HzDarkDlgButton"> 
+ <item name="android:background">@drawable/btn_settings_drawable</item> 
+ </style> 
+ Common spinner styles 
+</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzMediumIcon">HzMediumIcon</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzNotificationText">HzNotificationText</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzNotificationTitle">HzNotificationTitle</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzPlayFriendsActionButton">HzPlayFriendsActionButton</a></td>
+          <td class="jd-descrcol" width="100%"><style name="HzFormSeparator" parent="@style/HzBlock"> 
+ <item name="android:layout_height">2dp</item> 
+ <item name="android:background">@drawable/bkg_pixel_divider</item> 
+ </style> 
+</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzRetroCheckinBannerText">HzRetroCheckinBannerText</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzShareRowIcon">HzShareRowIcon</a></td>
+          <td class="jd-descrcol" width="100%"><style name="HzCheckinShareRow" parent="@style/HzBlock"> 
+ <item name="android:background">@drawable/ac_share_row_bkg</item> 
+ <item name="android:layout_height">36dp</item> 
+ <item name="android:layout_marginLeft">3dp</item> 
+ <item name="android:layout_marginRight">3dp</item> 
+ </style> 
+</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzShareRowText">HzShareRowText</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzSmallGreenButton">HzSmallGreenButton</a></td>
+          <td class="jd-descrcol" width="100%">Common button styles 
+</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzSmallIcon">HzSmallIcon</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzTextEditRowField">HzTextEditRowField</a></td>
+          <td class="jd-descrcol" width="100%"><style name="HzShareRowCheckbox" parent="@style/HzInline"> 
+ <item name="android:button">@android:color/transparent</item> 
+ <item name="android:background">@drawable/ac_checkbox</item> 
+ <item name="android:layout_width">24dp</item> 
+ <item name="android:layout_height">24dp</item> 
+ <item name="android:layout_margin">6dp</item> 
+ </style> 
+ <style name="HzCheckinActionRow" parent="@style/HzBlock"> 
+ <item name="android:background">@drawable/ac_bottom_row</item> 
+ <item name="android:layout_height">48dp</item> 
+ <item name="android:layout_marginLeft">3dp</item> 
+ <item name="android:layout_marginRight">3dp</item> 
+ </style> 
+ <style name="HzCheckinShareExploreButton" parent="@style/HzInline"> 
+ <item name="android:background">@drawable/btn_cs_explore_drawable</item> 
+ <item name="android:layout_height">36dp</item> 
+ <item name="android:layout_width">72dp</item> 
+ <item name="android:layout_marginLeft">6dp</item> 
+ </style> 
+ <style name="HzCheckinShareDoneButton" parent="@style/HzInline"> 
+ <item name="android:background">@drawable/btn_cs_done_drawable</item> 
+ <item name="android:layout_height">36dp</item> 
+ <item name="android:layout_width">72dp</item> 
+ <item name="android:layout_marginRight">6dp</item> 
+ </style> 
+ Login Text Entry Cell 
+ <style name="HzTextEditRow" parent="@style/HzVerticalFull"> 
+ <item name="android:layout_height">wrap_content</item> 
+ <item name="android:layout_width">fill_parent</item> 
+ <item name="android:background">@drawable/bg_form_cell</item> 
+ <item name="android:tileMode">repeat</item> 
+ </style> 
+ <style name="HzLoginButton" parent="@style/HzBlock"> 
+ <item name="android:layout_height">45dp</item> 
+ <item name="android:background">@drawable/btn_login_drawable</item> 
+ <item name="android:text">Log in"</item> 
+ <item name="android:textSize">18dp</item> 
+ <item name="android:textColor">#ffffff</item> 
+ <item name="android:textStyle">bold</item> 
+ <item name="android:shadowColor">#000000</item> 
+ <item name="android:shadowDy">-1</item> 
+ <item name="android:shadowRadius">0.01</item> 
+ <item name="android:gravity">left|center_vertical</item> 
+ </style> 
+ <style name="HzForgotPasswordButton" parent="@style/HzBlock"> 
+ <item name="android:layout_height">45dp</item> 
+ <item name="android:background">@drawable/btn_forgot_password_drawable</item> 
+ <item name="android:text">Forgot your password?"</item> 
+ <item name="android:textSize">18dp</item> 
+ <item name="android:textColor">#ffffff</item> 
+ <item name="android:textStyle">bold</item> 
+ <item name="android:shadowColor">#000000</item> 
+ <item name="android:shadowDy">-1</item> 
+ <item name="android:shadowRadius">0.01</item> 
+ <item name="android:gravity">left|center_vertical</item> 
+ </style> 
+ <style name="HzSignUpButton" parent="@style/HzBlock"> 
+ <item name="android:layout_height">45dp</item> 
+ <item name="android:background">@drawable/btn_sign_up_drawable</item> 
+ </style> 
+ <style name="HzTextEditRowErrorText" parent="@style/HzBlock"> 
+ <item name="android:textColor">#e74911</item> 
+ <item name="android:textSize">14sp</item> 
+ <item name="android:textStyle">bold</item> 
+ <item name="android:layout_marginLeft">14dp</item> 
+ <item name="android:layout_marginTop">5dp</item> 
+ <item name="android:shadowDy">2</item> 
+ <item name="android:shadowColor">#FFFFFF</item> 
+ <item name="android:shadowRadius">0.01</item> 
+ <item name="android:drawableLeft">@drawable/icon_error_arrow_down</item> 
+ <item name="android:drawablePadding">2dp</item> 
+ </style> 
+</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzTinyIcon">HzTinyIcon</a></td>
+          <td class="jd-descrcol" width="100%">Common icon styles 
+</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzTutorialIcon">HzTutorialIcon</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzTutorialItemHeader">HzTutorialItemHeader</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzTutorialItemStack">HzTutorialItemStack</a></td>
+          <td class="jd-descrcol" width="100%"><style name="HzTutorialTableRowTop" parent="@style/HzBlock"> 
+ <item name="android:background">@drawable/tbl_row_top</item> 
+ <item name="android:paddingTop">5dp</item> 
+ </style> 
+ <style name="HzTutorialTableRow" parent="@style/HzBlock"> 
+ <item name="android:background">@drawable/tbl_row_middle</item> 
+ <item name="android:paddingTop">2dp</item> 
+ </style> 
+ <style name="HzTutorialTableRowBottom" parent="@style/HzBlock"> 
+ <item name="android:background">@drawable/tbl_row_bottom</item> 
+ <item name="android:paddingTop">2dp</item> 
+ </style> 
+</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzTutorialItemSub">HzTutorialItemSub</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzTutorialProgress">HzTutorialProgress</a></td>
+          <td class="jd-descrcol" width="100%"><style name="HzTutorialCheckmark" parent="@style/HzBlock"> 
+ <item name="android:paddingTop">12dp</item> 
+ <item name="android:paddingRight">8dp</item> 
+ .</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzTutorialTable">HzTutorialTable</a></td>
+          <td class="jd-descrcol" width="100%">Tutorial styles 
+</td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzUserFeedIcon">HzUserFeedIcon</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzUserFeedLabel">HzUserFeedLabel</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzUserFeedRow">HzUserFeedRow</a></td>
+          <td class="jd-descrcol" width="100%">User feed styles 
+</td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzUserFeedSublabel">HzUserFeedSublabel</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzVerticalBlock">HzVerticalBlock</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class="alt-color api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzVerticalFull">HzVerticalFull</a></td>
+          <td class="jd-descrcol" width="100%"></td>
+      </tr>
+      
+    
+      <tr class=" api apilevel-v2" >
+          <td class="jd-typecol">
+          public
+          static
+          
+          int</td>
+          <td class="jd-linkcol"><a href="../../../com/heyzap/sdk/R.style.html#HzWhiteBottomShadow">HzWhiteBottomShadow</a></td>
+          <td class="jd-descrcol" width="100%"><style name="HzPlayFriendsOverlayButton" parent="@style/HzInline"> 
+ <item name="android:background">@drawable/play_friends_overlay_button_drawable</item> 
+ <item name="android:paddingBottom">1dp</item> 
+ <item name="android:textSize">12dp</item> 
+ <item name="android:textStyle">bold</item> 
+ </style> 
+</td>
+      </tr>
+      
+    
+
+</table>
+
+
+
+
+
+
+
+<!-- ======== CONSTRUCTOR SUMMARY ======== -->
+<table id="pubctors" class="jd-sumtable"><tr><th colspan="12">Public Constructors</th></tr>
+
+
+
+	 
+    <tr class="alt-color api apilevel-v2" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad"><a href="../../../com/heyzap/sdk/R.style.html#R.style()">R.style</a></span>()
+        
+  </td></tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<!-- ========== METHOD SUMMARY =========== -->
+<table id="inhmethods" class="jd-sumtable"><tr><th>
+  <a href="#" class="toggle-all" onclick="return toggleAllInherited(this, null)">[Expand]</a>
+  <div style="clear:left;">Inherited Methods</div></th></tr>
+
+
+<tr class="api apilevel-" >
+<td colspan="12">
+  <a href="#" onclick="return toggleInherited(this, null)" id="inherited-methods-java.lang.Object" class="jd-expando-trigger closed"
+          ><img id="inherited-methods-java.lang.Object-trigger"
+          src="../../../../assets/images/triangle-closed.png"
+          class="jd-expando-trigger-img" /></a>
+From class
+
+  <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Object.html">java.lang.Object</a>
+
+<div id="inherited-methods-java.lang.Object">
+  <div id="inherited-methods-java.lang.Object-list"
+        class="jd-inheritedlinks">
+  </div>
+  <div id="inherited-methods-java.lang.Object-summary" style="display: none;">
+    <table class="jd-sumtable-expando">
+    
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            boolean
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">equals</span>(<a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Object.html">Object</a> arg0)
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/Class.html">Class</a>&lt;?&gt;
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">getClass</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            int
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">hashCode</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">notify</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">notifyAll</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            
+            
+            
+            <a href="http://download.oracle.com/javase/6/docs/api/index.html?java/lang/String.html">String</a>
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">toString</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">wait</span>()
+        
+  </td></tr>
+
+
+	 
+    <tr class=" api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">wait</span>(long arg0, int arg1)
+        
+  </td></tr>
+
+
+	 
+    <tr class="alt-color api apilevel-" >
+        <td class="jd-typecol">
+            
+            
+            final
+            
+            
+            void
+        </td>
+        <td class="jd-linkcol" width="100%">
+        <span class="sympad">wait</span>(long arg0)
+        
+  </td></tr>
+
+
+</table>
+  </div>
+</div>
+</td></tr>
+
+
+</table>
+
+
+</div><!-- jd-descr (summary) -->
+
+<!-- Details -->
+
+
+
+
+
+
+
+
+<!-- XML Attributes -->
+
+
+<!-- Enum Values -->
+
+
+<!-- Constants -->
+
+
+<!-- Fields -->
+
+
+<!-- ========= FIELD DETAIL ======== -->
+<h2>Fields</h2>
+
+
+
+
+<a id="HzAchievementFeedLabel"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzAchievementFeedLabel
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzAchievementFeedRow"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzAchievementFeedRow
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzAchievementFeedSublabel"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzAchievementFeedSublabel
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzActionGrayButton"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzActionGrayButton
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzActionGreenButton"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzActionGreenButton
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzAuthCallToAction"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzAuthCallToAction
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzAuthHeader"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzAuthHeader
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Auth splash/login/signup styles 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzAuthSellLight"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzAuthSellLight
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><style name="HzAuthReasonShiney" parent="@style/HzBlock"> 
+ <item name="android:padding">8dp</item> 
+ <item name="android:layout_marginBottom">10dp</item> 
+ <item name="android:background">@drawable/splash_bg_shiney</item> 
+ <item name="android:textColor">#FF000000</item> 
+ <item name="android:textSize">14sp</item> 
+ </style> 
+ <style name="HzAuthCallToActionLight" parent="@style/HzAuthCallToAction"> 
+ <item name="android:gravity">left</item> 
+ <item name="android:textColor">#FF4C566C</item> 
+ <item name="android:layout_marginBottom">3dp</item> 
+ <item name="android:layout_marginTop">5dp</item> 
+ <item name="android:textSize">14sp</item> 
+ </style> 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzBigFeedHeadline"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzBigFeedHeadline
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzBlock"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzBlock
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzButtonRoundGreen"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzButtonRoundGreen
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzCheckinBannerText"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzCheckinBannerText
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>In-game popup styles 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzCheckinSettingsIcon"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzCheckinSettingsIcon
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzCheckinSettingsLabel"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzCheckinSettingsLabel
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzCheckinSettingsLine"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzCheckinSettingsLine
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><style name="HzCheckinSettingsCheckbox" parent="@style/HzInline"> 
+ <item name="android:button">@android:color/transparent</item> 
+ <item name="android:background">@drawable/checkbox</item> 
+ <item name="android:layout_centerVertical">true</item> 
+ <item name="android:layout_alignParentRight">true</item> 
+ </style> 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzCheckinSettingsSection"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzCheckinSettingsSection
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Checkin form settings 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzCheckinShareHeader"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzCheckinShareHeader
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzCheckinShareShareIcon"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzCheckinShareShareIcon
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><style name="HzCheckinShareCheckinMessage" parent="@style/HzBlock"> 
+ <item name="android:background">@drawable/ac_edit_text</item> 
+ <item name="android:textColor">#737a80</item> 
+ <item name="android:textSize">14sp</item> 
+ <item name="android:layout_marginTop">8dp</item> 
+ <item name="android:layout_height">32dp</item> 
+ <item name="android:layout_marginBottom">7dp</item> 
+ <item name="android:layout_marginRight">6dp</item> 
+ </style> 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzCheckinShareZappy"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzCheckinShareZappy
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Checkin share dialog 
+ <style name="HzCheckinShareBar" parent="@style/HzBlock"> 
+ <item name="android:layout_height">48dp</item> 
+ <item name="android:background">@drawable/ac_bkg_collapsed</item> 
+ </style> 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzDarkTopShadow"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzDarkTopShadow
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzDetailsHeader"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzDetailsHeader
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Details page styles 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzDialogSeparator"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzDialogSeparator
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Dialog styles 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzDividerText"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzDividerText
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><style name="HzFollowComplete" parent="@style/HzInline"> 
+ <item name="android:src">@drawable/user_details_checkin</item> 
+ </style> 
+ <style name="HzDividerRow" parent="@style/HzBlock"> 
+ <item name="android:background">@drawable/bkg_feedlette_divider</item> 
+ <item name="android:paddingLeft">8dp</item> 
+ <item name="android:gravity">center_vertical</item> 
+ </style> 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzErrorDividerText"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzErrorDividerText
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><style name="HzErrorDividerRow" parent="@style/HzBlock"> 
+ <item name="android:background">@drawable/bkg_feedlette_divider_error</item> 
+ <item name="android:paddingLeft">8dp</item> 
+ <item name="android:gravity">center_vertical</item> 
+ </style> 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzFeed"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzFeed
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Web Feed styles 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzFeedActionTitle"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzFeedActionTitle
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzFeedCheckinCount"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzFeedCheckinCount
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzFeedCommentCount"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzFeedCommentCount
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><style name="HzFeedCommentIcon" parent="@style/HzInline"> 
+ <item name="android:layout_marginLeft">18dp</item> 
+ <item name="android:layout_marginRight">4dp</item> 
+ <item name="android:src">@drawable/comment_icon</item> 
+ </style> 
+ <style name="HzFeedLikeIcon" parent="@style/HzInline"> 
+ <item name="android:layout_marginLeft">9dp</item> 
+ <item name="android:layout_marginRight">4dp</item> 
+ <item name="android:src">@drawable/img_like</item> 
+ <item name="android:scaleType">fitXY</item> 
+ <item name="android:layout_width">15dp</item> 
+ <item name="android:layout_height">15dp</item> 
+ </style> 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzFeedDetails"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzFeedDetails
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><style name="HzActivityStreamItem" parent="@style/HzBlock"> 
+ <item name="android:paddingLeft">8dp</item> 
+ <item name="android:paddingTop">8dp</item> 
+ <item name="android:paddingRight">30dp</item> 
+ <item name="android:paddingBottom">8dp</item> 
+ <item name="android:background">@drawable/activity_stream_item</item> 
+ </style> 
+ <style name="HzActivityStreamItemFrame" parent="@style/HzVerticalBlock"> 
+ <item name="android:background">@drawable/activity_stream_item</item> 
+ </style> 
+ <style name="HzCommentStreamItem" parent="@style/HzBlock"> 
+ <item name="android:padding">8dp</item> 
+ <item name="android:background">@drawable/comment_stream_item</item> 
+ </style> 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzFeedHeadline"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzFeedHeadline
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzFeedLabel"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzFeedLabel
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzFeedMessage"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzFeedMessage
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzFeedSublabel"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzFeedSublabel
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzFeedTextView"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzFeedTextView
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzFeedUser"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzFeedUser
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzFeedWhen"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzFeedWhen
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzFollowLoading"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzFollowLoading
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><style name="HzUserToggle"> 
+ <item name="android:layout_width">wrap_content</item> 
+ <item name="android:layout_height">wrap_content</item> 
+ <item name="android:layout_centerVertical">true</item> 
+ <item name="android:textOff"></item> 
+ <item name="android:textOn"></item> 
+ <item name="android:background">@drawable/user_toggle_button</item> 
+ </style> 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzFormMessage"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzFormMessage
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Checkin/Tips form styles 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzFriendsFoundTitle"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzFriendsFoundTitle
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Friends found screen styles 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzFull"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzFull
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzGreenActionButton"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzGreenActionButton
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzGreenButton"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzGreenButton
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzHorizontalBlock"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzHorizontalBlock
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzInline"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzInline
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Common styles 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzLargeGreenButton"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzLargeGreenButton
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzLargeIcon"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzLargeIcon
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzLargeUserImage"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzLargeUserImage
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzLoadMoreButton"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzLoadMoreButton
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Load more button for lists 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzLoadMoreButtonLabel"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzLoadMoreButtonLabel
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzLoadMoreButtonSpinner"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzLoadMoreButtonSpinner
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>New common button styles 
+ <style name="HzFacebookLoginButton" parent="@style/HzBlock"> 
+ <item name="android:background">@drawable/btn_facebook_login_drawable</item> 
+ <item name="android:layout_height">47dp</item> 
+ <item name="android:text">Log in with Facebook"</item> 
+ <item name="android:textSize">18dp</item> 
+ <item name="android:textColor">#ffffff</item> 
+ <item name="android:textStyle">bold</item> 
+ <item name="android:shadowColor">#000000</item> 
+ <item name="android:shadowDy">-1</item> 
+ <item name="android:shadowRadius">0.01</item> 
+ <item name="android:gravity">left|center_vertical</item> 
+ </style> 
+ <style name="HzGreenDlgButton" parent="@style/HzLoginButton"> 
+ <item name="android:background">@drawable/dialog_button_primary</item> 
+ <item name="android:paddingLeft">10dp</item> 
+ <item name="android:paddingRight">10dp</item> 
+ <item name="android:textColor">#FFF</item> 
+ <item name="android:textSize">15sp</item> 
+ <item name="android:gravity">center</item> 
+ </style> 
+ <style name="HzDarkDlgButton" parent="@style/HzGreenDlgButton"> 
+ <item name="android:background">@drawable/btn_black_drawable</item> 
+ <item name="android:textStyle">normal</item> 
+ </style> 
+ <style name="HzEditCheckinSettingsButton" parent="@style/HzDarkDlgButton"> 
+ <item name="android:background">@drawable/btn_settings_drawable</item> 
+ </style> 
+ Common spinner styles 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzMediumIcon"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzMediumIcon
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzNotificationText"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzNotificationText
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzNotificationTitle"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzNotificationTitle
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzPlayFriendsActionButton"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzPlayFriendsActionButton
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><style name="HzFormSeparator" parent="@style/HzBlock"> 
+ <item name="android:layout_height">2dp</item> 
+ <item name="android:background">@drawable/bkg_pixel_divider</item> 
+ </style> 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzRetroCheckinBannerText"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzRetroCheckinBannerText
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzShareRowIcon"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzShareRowIcon
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><style name="HzCheckinShareRow" parent="@style/HzBlock"> 
+ <item name="android:background">@drawable/ac_share_row_bkg</item> 
+ <item name="android:layout_height">36dp</item> 
+ <item name="android:layout_marginLeft">3dp</item> 
+ <item name="android:layout_marginRight">3dp</item> 
+ </style> 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzShareRowText"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzShareRowText
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzSmallGreenButton"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzSmallGreenButton
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Common button styles 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzSmallIcon"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzSmallIcon
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzTextEditRowField"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzTextEditRowField
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><style name="HzShareRowCheckbox" parent="@style/HzInline"> 
+ <item name="android:button">@android:color/transparent</item> 
+ <item name="android:background">@drawable/ac_checkbox</item> 
+ <item name="android:layout_width">24dp</item> 
+ <item name="android:layout_height">24dp</item> 
+ <item name="android:layout_margin">6dp</item> 
+ </style> 
+ <style name="HzCheckinActionRow" parent="@style/HzBlock"> 
+ <item name="android:background">@drawable/ac_bottom_row</item> 
+ <item name="android:layout_height">48dp</item> 
+ <item name="android:layout_marginLeft">3dp</item> 
+ <item name="android:layout_marginRight">3dp</item> 
+ </style> 
+ <style name="HzCheckinShareExploreButton" parent="@style/HzInline"> 
+ <item name="android:background">@drawable/btn_cs_explore_drawable</item> 
+ <item name="android:layout_height">36dp</item> 
+ <item name="android:layout_width">72dp</item> 
+ <item name="android:layout_marginLeft">6dp</item> 
+ </style> 
+ <style name="HzCheckinShareDoneButton" parent="@style/HzInline"> 
+ <item name="android:background">@drawable/btn_cs_done_drawable</item> 
+ <item name="android:layout_height">36dp</item> 
+ <item name="android:layout_width">72dp</item> 
+ <item name="android:layout_marginRight">6dp</item> 
+ </style> 
+ Login Text Entry Cell 
+ <style name="HzTextEditRow" parent="@style/HzVerticalFull"> 
+ <item name="android:layout_height">wrap_content</item> 
+ <item name="android:layout_width">fill_parent</item> 
+ <item name="android:background">@drawable/bg_form_cell</item> 
+ <item name="android:tileMode">repeat</item> 
+ </style> 
+ <style name="HzLoginButton" parent="@style/HzBlock"> 
+ <item name="android:layout_height">45dp</item> 
+ <item name="android:background">@drawable/btn_login_drawable</item> 
+ <item name="android:text">Log in"</item> 
+ <item name="android:textSize">18dp</item> 
+ <item name="android:textColor">#ffffff</item> 
+ <item name="android:textStyle">bold</item> 
+ <item name="android:shadowColor">#000000</item> 
+ <item name="android:shadowDy">-1</item> 
+ <item name="android:shadowRadius">0.01</item> 
+ <item name="android:gravity">left|center_vertical</item> 
+ </style> 
+ <style name="HzForgotPasswordButton" parent="@style/HzBlock"> 
+ <item name="android:layout_height">45dp</item> 
+ <item name="android:background">@drawable/btn_forgot_password_drawable</item> 
+ <item name="android:text">Forgot your password?"</item> 
+ <item name="android:textSize">18dp</item> 
+ <item name="android:textColor">#ffffff</item> 
+ <item name="android:textStyle">bold</item> 
+ <item name="android:shadowColor">#000000</item> 
+ <item name="android:shadowDy">-1</item> 
+ <item name="android:shadowRadius">0.01</item> 
+ <item name="android:gravity">left|center_vertical</item> 
+ </style> 
+ <style name="HzSignUpButton" parent="@style/HzBlock"> 
+ <item name="android:layout_height">45dp</item> 
+ <item name="android:background">@drawable/btn_sign_up_drawable</item> 
+ </style> 
+ <style name="HzTextEditRowErrorText" parent="@style/HzBlock"> 
+ <item name="android:textColor">#e74911</item> 
+ <item name="android:textSize">14sp</item> 
+ <item name="android:textStyle">bold</item> 
+ <item name="android:layout_marginLeft">14dp</item> 
+ <item name="android:layout_marginTop">5dp</item> 
+ <item name="android:shadowDy">2</item> 
+ <item name="android:shadowColor">#FFFFFF</item> 
+ <item name="android:shadowRadius">0.01</item> 
+ <item name="android:drawableLeft">@drawable/icon_error_arrow_down</item> 
+ <item name="android:drawablePadding">2dp</item> 
+ </style> 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzTinyIcon"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzTinyIcon
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Common icon styles 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzTutorialIcon"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzTutorialIcon
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzTutorialItemHeader"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzTutorialItemHeader
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzTutorialItemStack"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzTutorialItemStack
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><style name="HzTutorialTableRowTop" parent="@style/HzBlock"> 
+ <item name="android:background">@drawable/tbl_row_top</item> 
+ <item name="android:paddingTop">5dp</item> 
+ </style> 
+ <style name="HzTutorialTableRow" parent="@style/HzBlock"> 
+ <item name="android:background">@drawable/tbl_row_middle</item> 
+ <item name="android:paddingTop">2dp</item> 
+ </style> 
+ <style name="HzTutorialTableRowBottom" parent="@style/HzBlock"> 
+ <item name="android:background">@drawable/tbl_row_bottom</item> 
+ <item name="android:paddingTop">2dp</item> 
+ </style> 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzTutorialItemSub"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzTutorialItemSub
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzTutorialProgress"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzTutorialProgress
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><style name="HzTutorialCheckmark" parent="@style/HzBlock"> 
+ <item name="android:paddingTop">12dp</item> 
+ <item name="android:paddingRight">8dp</item> 
+ .                <item name="android:layout_marginRight">3dp</item> 
+ <item name="android:layout_width">38dp</item> 
+ <item name="android:layout_height">38dp</item> 
+ <item name="android:layout_gravity">right</item> 
+ <item name="android:src">@drawable/checkbox_unchecked</item> 
+ </style> 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzTutorialTable"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzTutorialTable
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>Tutorial styles 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzUserFeedIcon"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzUserFeedIcon
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzUserFeedLabel"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzUserFeedLabel
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzUserFeedRow"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzUserFeedRow
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p>User feed styles 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzUserFeedSublabel"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzUserFeedSublabel
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzVerticalBlock"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzVerticalBlock
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzVerticalFull"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzVerticalFull
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    
+    </div>
+</div>
+
+
+
+<a id="HzWhiteBottomShadow"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+        static 
+         
+        int
+      </span>
+        HzWhiteBottomShadow
+    </h4>
+      <div class="api-level">
+        
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p><style name="HzPlayFriendsOverlayButton" parent="@style/HzInline"> 
+ <item name="android:background">@drawable/play_friends_overlay_button_drawable</item> 
+ <item name="android:paddingBottom">1dp</item> 
+ <item name="android:textSize">12dp</item> 
+ <item name="android:textStyle">bold</item> 
+ </style> 
+</p></div>
+
+    
+    </div>
+</div>
+
+
+
+
+<!-- Public ctors -->
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<h2>Public Constructors</h2>
+
+
+
+<a id="R.style()"></a>
+
+<div class="jd-details api apilevel-v2"> 
+    <h4 class="jd-details-title">
+      <span class="normal">
+        public 
+         
+         
+         
+         
+        
+      </span>
+      <span class="sympad">R.style</span>
+      <span class="normal">()</span>
+    </h4>
+      <div class="api-level">
+        <div>
+
+  Since: <a href="../../../guide/appendix/api-levels.html#levelv2">API Level v2</a>
+
+</div>
+        
+  
+
+      </div>
+    <div class="jd-details-descr">
+      
+  <div class="jd-tagdata jd-tagdescr"><p></p></div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- ========= CONSTRUCTOR DETAIL ======== -->
+<!-- Protected ctors -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+<!-- Public methdos -->
+
+
+
+<!-- ========= METHOD DETAIL ======== -->
+
+
+
+<!-- ========= END OF CLASS DATA ========= -->
+<a id="navbar_top"></a>
+
+<div id="footer">
+Generated by <a href="http://code.google.com/p/doclava/">Doclava</a>.
+</div> <!-- end footer -->
+
+</div> <!-- jd-content -->
+
+</div><!-- end doc-content -->
+
+</div> <!-- end body-content --> 
+
+<script type="text/javascript">
+init(); /* initialize doclava-developer-docs.js */
+</script>
+
+</body>
+</html>

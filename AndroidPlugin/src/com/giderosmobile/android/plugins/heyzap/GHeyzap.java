@@ -2,24 +2,26 @@ package com.giderosmobile.android.plugins.heyzap;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
-import java.util.Hashtable;
 
 import com.heyzap.sdk.HeyzapLib;
 import com.heyzap.sdk.ads.HeyzapAds;
-import com.heyzap.sdk.ads.InterstitialOverlay;
-import com.heyzap.sdk.ads.OnAdDisplayListener;
+import com.heyzap.sdk.ads.IncentivizedAd;
+import com.heyzap.sdk.ads.HeyzapAds.OnIncentiveResultListener;
+import com.heyzap.sdk.ads.HeyzapAds.OnStatusListener;
+import com.heyzap.sdk.ads.InterstitialAd;
+import com.heyzap.sdk.ads.VideoAd;
 
 import android.app.Activity;
-import android.util.Log;
 import android.util.SparseArray;
-import android.view.Gravity;
 
-public class GHeyzap implements OnAdDisplayListener{
+public class GHeyzap implements OnStatusListener, OnIncentiveResultListener{
 	
 	private static WeakReference<Activity> sActivity;
 	private static long sData = 0;
 	private static GHeyzap sInstance;
 	private static boolean hasInterstitial = false;
+	private static boolean hasVideo = false;
+	private static boolean hasV4vc = false;
 	
 	public static void onCreate(Activity activity)
 	{
@@ -36,7 +38,6 @@ public class GHeyzap implements OnAdDisplayListener{
 	public static void init(long data){
 		sData = data;
 		sInstance = new GHeyzap();
-		InterstitialOverlay.setDisplayListener(sInstance);
 	}
 	
 	public static void cleanup()
@@ -50,6 +51,8 @@ public class GHeyzap implements OnAdDisplayListener{
 		HeyzapLib.load(sActivity.get(), false);
 		if(willUseAds){
 			HeyzapAds.start(sActivity.get());
+			HeyzapAds.setOnStatusListener(sInstance);
+			HeyzapAds.setOnIncentiveResultListener(sInstance);
 		}
 	}
 	
@@ -62,10 +65,28 @@ public class GHeyzap implements OnAdDisplayListener{
 		{
 			if(hasInterstitial)
 			{
-				InterstitialOverlay.dismiss();
+				InterstitialAd.dismiss();
 			}
-			InterstitialOverlay.display(sActivity.get());
+			InterstitialAd.display(sActivity.get());
 			hasInterstitial = true;
+		}
+		else if(type.equals("video"))
+		{
+			if(hasVideo)
+			{
+				VideoAd.dismiss();
+			}
+			VideoAd.display(sActivity.get());
+			hasVideo = true;
+		}
+		else if(type.equals("v4vc"))
+		{
+			if(hasV4vc)
+			{
+				IncentivizedAd.dismiss();
+			}
+			IncentivizedAd.display(sActivity.get());
+			hasV4vc = true;
 		}
 	}
 	
@@ -74,8 +95,18 @@ public class GHeyzap implements OnAdDisplayListener{
 	{
 		if(hasInterstitial)
 		{
-			InterstitialOverlay.dismiss();
+			InterstitialAd.dismiss();
 			hasInterstitial = false;
+		}
+		if(hasVideo)
+		{
+			VideoAd.dismiss();
+			hasVideo = false;
+		}
+		if(hasV4vc)
+		{
+			IncentivizedAd.dismiss();
+			hasV4vc = false;
 		}
 	}
 	
@@ -117,7 +148,6 @@ public class GHeyzap implements OnAdDisplayListener{
 
 	@Override
 	public void onShow(String tag) {
-		Log.d("AdShow", "showing ad");
 		if (sData != 0)
 			onAdReceived(sData);
 		
@@ -149,6 +179,22 @@ public class GHeyzap implements OnAdDisplayListener{
 
 	@Override
 	public void onFailedToFetch(String tag) {
-
+		if (sData != 0)
+			onAdFailed(sData);
 	}
+
+	@Override
+	public void onAudioStarted() {}
+
+	@Override
+	public void onAudioFinished() {}
+
+	@Override
+	public void onComplete() {
+		if (sData != 0)
+			onAdActionBegin(sData);
+	}
+
+	@Override
+	public void onIncomplete() {}
 }
